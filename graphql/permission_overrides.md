@@ -2,7 +2,7 @@
 
 In Shopify Admin, there are some subtle overlaps in permissions that are necessary for common tasks. For example, users with Orders permission are intentionally permitted to query some fields on Customers in order to process orders. This is the current list of these permission overlaps. Note that this list may change over time, but we will do our best to keep this reference up to date.
 
-**Last Update:** 2020-09-09
+**Last Update:** 2020-10-14
 
 #### CheckoutSettings
 | Permission Overrides | Accessible Fields |
@@ -20,6 +20,11 @@ Discounts | id, title, image
 Discounts | id, displayName, email, ordersCount, totalSpentV2, phone, note
 Draft Orders | id, firstName, lastName, displayName, email, image, note, phone, taxExempt, ordersCount, defaultAddress, addressesV2
 Orders | id, displayName, fullName, image, note, ordersCount
+
+#### CustomerEmailTemplateSubjects
+| Permission Overrides | Accessible Fields |
+| :--- | :--- |
+Orders | contactBuyer
 
 #### DeliveryShippingInsuranceCoverage
 | Permission Overrides | Accessible Fields |
@@ -57,6 +62,11 @@ Orders | id, harmonizedSystemCode, countryCodeOfOrigin, provinceCodeOfOrigin
 Discounts | id, title, product, variant
 Customers | id, title, variantTitle, image, product, variant
 
+#### MarketingEvent
+| Permission Overrides | Accessible Fields |
+| :--- | :--- |
+Orders | app, channel, id, startedAt, type
+
 #### MediaImage
 | Permission Overrides | Accessible Fields |
 | :--- | :--- |
@@ -83,10 +93,10 @@ Orders | id, multipleCapture
 #### Product
 | Permission Overrides | Accessible Fields |
 | :--- | :--- |
-Discounts | id, title, images, hasOnlyDefaultVariant, tracksInventory, variants, totalVariants, featuredMedia, featuredImage, totalInventory
+Discounts | id, title, status, images, hasOnlyDefaultVariant, tracksInventory, variants, totalVariants, featuredMedia, featuredImage, totalInventory
 Customers | id, title, featuredImage, tracksInventory, totalInventory, variants
 Settings | id, title, hasOnlyDefaultVariant, featuredImage, totalVariants, tracksInventory, inCollection, featuredMedia, images, variants
-Draft Orders | id, title, images, hasOnlyDefaultVariant, tracksInventory, variants, totalVariants, featuredMedia, featuredImage
+Draft Orders | id, title, status, images, hasOnlyDefaultVariant, tracksInventory, variants, totalVariants, featuredMedia, featuredImage
 Orders | id
 
 #### ProductVariant
