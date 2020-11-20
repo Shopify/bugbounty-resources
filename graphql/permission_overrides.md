@@ -2,7 +2,7 @@
 
 In Shopify Admin, there are some subtle overlaps in permissions that are necessary for common tasks. For example, users with Orders permission are intentionally permitted to query some fields on Customers in order to process orders. This is the current list of these permission overlaps. Note that this list may change over time, but we will do our best to keep this reference up to date.
 
-**Last Update:** 2020-10-14
+**Last Update:** 2020-11-20
 
 #### CheckoutSettings
 | Permission Overrides | Accessible Fields |
@@ -26,6 +26,11 @@ Orders | id, displayName, fullName, image, note, ordersCount
 | :--- | :--- |
 Orders | contactBuyer
 
+#### DeliveryProfile
+| Permission Overrides | Accessible Fields |
+| :--- | :--- |
+Orders | id, name
+
 #### DeliveryShippingInsuranceCoverage
 | Permission Overrides | Accessible Fields |
 | :--- | :--- |
@@ -46,15 +51,16 @@ Customers | id, title, product, variant
 #### ExternalVideo
 | Permission Overrides | Accessible Fields |
 | :--- | :--- |
-Discounts | id, alt, previewImage
-Settings | id, alt, previewImage
+Discounts | id, alt, previewImage, preview
+Settings | id, alt, previewImage, preview
+Draft Orders | id, alt, previewImage, preview
 
 #### InventoryItem
 | Permission Overrides | Accessible Fields |
 | :--- | :--- |
 Discounts | tracked
 Customers | tracked
-Orders | id, harmonizedSystemCode, countryCodeOfOrigin, provinceCodeOfOrigin
+Orders | id, harmonizedSystemCode, countryCodeOfOrigin, provinceCodeOfOrigin, stockableLocations
 
 #### LineItem
 | Permission Overrides | Accessible Fields |
@@ -70,14 +76,22 @@ Orders | app, channel, id, startedAt, type
 #### MediaImage
 | Permission Overrides | Accessible Fields |
 | :--- | :--- |
-Discounts | id, alt, previewImage
-Settings | id, alt, previewImage
+Discounts | id, alt, previewImage, preview
+Settings | id, alt, previewImage, preview
+Draft Orders | id, alt, previewImage, preview
+
+#### MediaPreviewImage
+| Permission Overrides | Accessible Fields |
+| :--- | :--- |
+Discounts | image
+Draft Orders | image
 
 #### Model3d
 | Permission Overrides | Accessible Fields |
 | :--- | :--- |
-Discounts | id, alt, previewImage
-Settings | id, alt, previewImage
+Discounts | id, alt, previewImage, preview
+Settings | id, alt, previewImage, preview
+Draft Orders | id, alt, previewImage, preview
 
 #### Order
 | Permission Overrides | Accessible Fields |
@@ -111,5 +125,6 @@ Orders | id, inventoryItem
 #### Video
 | Permission Overrides | Accessible Fields |
 | :--- | :--- |
-Discounts | id, alt, previewImage
-Settings | id, alt, previewImage
+Discounts | id, alt, previewImage, preview
+Settings | id, alt, previewImage, preview
+Draft Orders | id, alt, previewImage, preview
