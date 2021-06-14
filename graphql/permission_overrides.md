@@ -2,7 +2,7 @@
 
 In Shopify Admin, there are some subtle overlaps in permissions that are necessary for common tasks. For example, users with Orders permission are intentionally permitted to query some fields on Customers in order to process orders. This is the current list of these permission overlaps. Note that this list may change over time, but we will do our best to keep this reference up to date.
 
-**Last Update:** 2021-05-21
+**Last Update:** 2021-06-14
 
 #### CheckoutSettings
 | Permission Overrides | Accessible Fields |
@@ -14,6 +14,7 @@ Draft Orders | emailOrPhoneFieldMode
 | Permission Overrides | Accessible Fields |
 | :--- | :--- |
 Discounts | id, title, image, handle
+Draft Orders | id, title, productsCount
 
 #### CustomPaymentMethod
 | Permission Overrides | Accessible Fields |
