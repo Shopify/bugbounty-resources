@@ -1,6 +1,6 @@
 ## Permission Overrides
 
-In Shopify Admin, there are some subtle overlaps in permissions that are necessary for common tasks. For example, users with Orders permission are intentionally permitted to query some fields on Customers in order to process orders. This is the current list of these permission overlaps. Note that this list may change over time, but we will do our best to keep this reference up to date.
+In Shopify Admin, there are some subtle overlaps in permissions that are necessary for common tasks. For example, users with Orders permission are intentionally permitted to query some fields on Customers in order to process orders. This is the current list of these permission overlaps. Each header is the target query type and the entries in the table are the permissions that can access certain fields on that query type. Note that this list may change over time, but we will do our best to keep this reference up to date.
 
 **Last Update:** 2021-06-14
 
