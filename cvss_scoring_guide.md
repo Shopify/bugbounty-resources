@@ -36,7 +36,7 @@ Compromising a Shopify ID account does not lead to a scope change, even though y
 #### Confidentiality Impact
 The Confidentiality metric describes the ability to read sensitive information without proper authorization, the most common scenario being permissions issues in our APIs. To reach a score of High, there must be a total loss of confidentiality for all data belonging to the service (as per the CVSS specification).
 
-Note that for permission issues in Shopify Admin, there are subtle overlaps in permissions necessary for certain tasks. We do our best to detail these overlaps, by publishing the [permission overrides in GraphQL]().
+Note that for permission issues in Shopify Admin, there are subtle overlaps in permissions necessary for certain tasks. We do our best to detail these overlaps, by publishing the [permission overrides in GraphQL](graphql/permission_overrides.md).
 
 #### Integrity Impact
 The Integrity metric describes the ability to make changes without proper authorization, the most common scenario also being permissions issues in our APIs. To reach a score of High, there must be a total loss of integrity for all data belonging to that service (as per the CVSS specification).
