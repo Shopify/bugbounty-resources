@@ -9,5 +9,10 @@ This repo contains resources meant to help researchers with security testing on 
 * [Permission Overrides](graphql/permission_overrides.md)
 * [Scripts Platform V2](scripts_platform.md)
 
+#### Product & Engineering Updates:
+* [Shopify Change Log](https://changelog.shopify.com/)
+* [Partners Blog](https://www.shopify.ca/partners/blog/topics/shopify-news)
+* [Engineering Blog](https://shopify.engineering/)
+
 #### Contact:
 To report vulnerabilities, please submit to our bug bounty program on HackerOne as linked above. For questions about rules or program scope, you can reach out to us at `bugbounty@shopify.com`.
