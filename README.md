@@ -4,7 +4,7 @@ This repo contains resources meant to help researchers with security testing on 
 
 #### Currently Available Resources:
 * [CVSS Calculator](https://shopify.github.io/appsec/cvss_calculator/)
-* [CVSS Scoring Guide](cvss/main_guide.md)
+* [CVSS Scoring Guide](cvss_scoring_guide.md)
 * [Intro to GraphQL Testing](graphql/main_guide.md)
 * [Permission Overrides](graphql/permission_overrides.md)
 * [Scripts Platform V2](scripts_platform.md)
